@@ -279,7 +279,7 @@ public class vistaUnidadMedica extends javax.swing.JDialog {
         System.out.println("formato de fecha " + formatoFecha.toPattern() + " valor: " + fechaFormateada);
         System.out.println("formato de fecha " + formatoTiempo.toPattern() + " valor: " + fechaFormatoTiempo);
         /**/
-        cb.MySQLConnection("root", "SAKAI", "bdconsultorio"); /*Abrimos conexión*/
+        cb.MySQLConnection("root", "root", "bdconsultorio"); /*Abrimos conexión*/
             auxCase = um_pacientebd.getText();
             //cd.setUm_consultorio((String) um_consultoriobd.getSelectedItem());
             String umConsultorio = (String) um_consultoriobd.getSelectedItem();
