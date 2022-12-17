@@ -62,7 +62,7 @@ public class vistaPacientes extends javax.swing.JFrame {
     
     /*Obtienes las Columnas*/
     String[] getColumnas(){ //Columnas
-        columna = new String[] {"IDPACIENTE","NOMBRE","APELLIDOPAT","APELLIDOMAT","CURP","IDUNIDADMEDICA"};
+        columna = new String[] {"IDPACIENTE","NOMBRE","APELLIDOPAT","APELLIDOMAT","DNI","IDUNIDADMEDICA"};
         //{"CI","USUARIOS","NOMBRES","APELLIDOS","GRUPO","MONTOSOLICITADO","SOL","CALIFICACION","FECHASOLICITUD","STATUS"};
         return columna;
     }
@@ -72,7 +72,7 @@ public class vistaPacientes extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT ci_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_curp,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
+            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
                  /*
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
@@ -80,11 +80,11 @@ public class vistaPacientes extends javax.swing.JFrame {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
                  */
@@ -119,7 +119,7 @@ public class vistaPacientes extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT ci_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-                "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_curp,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes where pac_nombres = '"+busquedaFiltroSF+"' or id_paciente = '"+busquedaFiltroSF+"'";
+                "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes where pac_nombres = '"+busquedaFiltroSF+"' or id_paciente = '"+busquedaFiltroSF+"'";
                  /*
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
@@ -127,11 +127,11 @@ public class vistaPacientes extends javax.swing.JFrame {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
                  */

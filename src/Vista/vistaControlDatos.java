@@ -31,7 +31,7 @@ public class vistaControlDatos extends javax.swing.JFrame {
     public String public_edad = "";
     controladorBD cb = new controladorBD();
     public vistaControlDatos(String idPaciente, int verDatos) {
-        //String Sql = "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_curp,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
+        //String Sql = "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
         Sql = "SELECT * FROM bdconsultorio.tabla_pacientes, bdconsultorio.tabla_unidadmedica";
         Sql += " WHERE id_paciente = '"+idPaciente+"' and um_paciente = '"+idPaciente+"'";
         initComponents();
@@ -60,7 +60,7 @@ public class vistaControlDatos extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT dni_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_curp,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
+            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
                  
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
@@ -68,11 +68,11 @@ public class vistaControlDatos extends javax.swing.JFrame {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
                 //unimedica
@@ -102,13 +102,13 @@ public class vistaControlDatos extends javax.swing.JFrame {
                   //resultSet.getStringpac_nombres
                   nombreCompleto = res.getString("pac_nombres") +" "+ res.getString("pac_apellidopaterno") +" "+ res.getString("pac_apellidomaterno");
                   dape_nombre.setText(res.getString("pac_nombres") +" "+ res.getString("pac_apellidopaterno") +" "+ res.getString("pac_apellidomaterno"));
-                  dape_curp.setText(res.getString("pac_curp"));
+                  dape_curp.setText(res.getString("pac_dni"));
                   public_edad = res.getString("pac_edad");
                   dape_edad.setText(res.getString("pac_edad"));
                   dape_lugar.setText(res.getString("pac_lugar"));
                   dape_direccion.setText(res.getString("pac_direccion"));
                   dape_nomcasa.setText(res.getString("pac_numcasa") );
-                  dape_colonia.setText(res.getString("pac_colonia") );
+                  dape_colonia.setText(res.getString("pac_calle") );
                   dape_sexo.setText(res.getString("pac_sexo"));
                   dape_fechanac.setText(res.getString("pac_fechanac"));
                   dape_idpac.setText(res.getString("id_paciente") );
@@ -227,7 +227,7 @@ public class vistaControlDatos extends javax.swing.JFrame {
         jLabel1.setText("Nombre:");
 
         jLabel2.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel2.setText("Ciudad");
+        jLabel2.setText("DNI:");
 
         jLabel3.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel3.setText("Edad:");
@@ -274,7 +274,7 @@ public class vistaControlDatos extends javax.swing.JFrame {
         jLabel11.setText("Número de paciente:");
 
         jLabel12.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel12.setText("Número de DNI:");
+        jLabel12.setText("Número de folio:");
 
         jLabel13.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel13.setText("Número de Seguro/Unidad Medica:");

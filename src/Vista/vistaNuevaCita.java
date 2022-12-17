@@ -357,7 +357,7 @@ public class vistaNuevaCita extends javax.swing.JDialog {
             fechaFormateada = formatoFecha.format(ncita_fecha.getDate());
             fechaFormatoTiempo = formatoTiempo.format(ncita_fecha.getDate());
             cb.MySQLConnection("root", "SAKAI", "bdconsultorio");
-            //validaBD = cb.updateDataUsuarioPAC("tabla_pacientes", random, pac_nombres.getText(), pac_paterno.getText(), pac_materno.getText(), edad, sexo, pac_curp.getText(),pac_lugar.getText(), pac_direccion.getText(), pac_numcasa.getText(), pac_colonia.getText(),fechaFormateada, random2);
+            //validaBD = cb.updateDataUsuarioPAC("tabla_pacientes", random, pac_nombres.getText(), pac_paterno.getText(), pac_materno.getText(), edad, sexo, pac_dni.getText(),pac_lugar.getText(), pac_direccion.getText(), pac_numcasa.getText(), pac_calle.getText(),fechaFormateada, random2);
             int idpac = Integer.parseInt(ncita_idpaciente);
             Date dateFecha = ncita_fecha.getDate();
             generaIdCita = (int)(Math.random()*10000000+1);

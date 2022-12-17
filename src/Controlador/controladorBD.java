@@ -238,17 +238,17 @@ public class controladorBD {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
     ----------------------------------------------------------------------------------
 */
     public int insertDataUsuarioPAC(String table_name,int um_paciente, String pac_nombres, String pac_apellidopaterno, String pac_apellidomaterno, 
-            int pac_edad, String pac_sexo,String pac_curp,String pac_lugar, String pac_direccion, String pac_numcasa, String pac_colonia, String pac_fechanac,  int id_unidadmedica ) {
+            int pac_edad, String pac_sexo,String pac_dni,String pac_lugar, String pac_direccion, String pac_numcasa, String pac_calle, String pac_fechanac,  int id_unidadmedica ) {
         clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se inicia insertDataUsuarioPAC()");
         try {
             String Query = "INSERT INTO " + table_name + " VALUES("
@@ -258,11 +258,11 @@ public class controladorBD {
                     + "\"" + pac_apellidomaterno + "\", "
                     + "\"" + pac_edad + "\", "
                     + "\"" + pac_sexo + "\", "
-                    + "\"" + pac_curp + "\", "
+                    + "\"" + pac_dni + "\", "
                     + "\"" + pac_lugar + "\", "
                     + "\"" + pac_direccion + "\", "
                     + "\"" + pac_numcasa + "\", "
-                    + "\"" + pac_colonia + "\", "
+                    + "\"" + pac_calle + "\", "
                     + "\"" + pac_fechanac + "\", "
                     + "\"" + id_unidadmedica + "\")";
             Statement st = Conexion.createStatement();
@@ -288,11 +288,11 @@ public class controladorBD {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
     ----------------------------------------------------------------------------------
@@ -339,17 +339,17 @@ public class controladorBD {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
     ----------------------------------------------------------------------------------
 */
     public int updateDataUsuarioPAC(String table_name,int um_paciente, String pac_nombres, String pac_apellidopaterno, String pac_apellidomaterno, 
-            int pac_edad, String pac_sexo,String pac_curp,String pac_lugar, String pac_direccion, String pac_numcasa, String pac_colonia, String pac_fechanac,  int id_unidadmedica ) {
+            int pac_edad, String pac_sexo,String pac_dni,String pac_lugar, String pac_direccion, String pac_numcasa, String pac_calle, String pac_fechanac,  int id_unidadmedica ) {
         clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se inicia updateDataUsuarioPAC()");
         try {
             //int response;
@@ -359,11 +359,11 @@ public class controladorBD {
                     + "pac_apellidomaterno = '" + pac_apellidomaterno + "', "
                     + "pac_edad = '" + pac_edad + "', "
                     + "pac_sexo = '" + pac_sexo + "', "
-                    + "pac_curp = '" + pac_curp + "', "
+                    + "pac_dni = '" + pac_dni + "', "
                     + "pac_lugar = '" + pac_lugar + "', "
                     + "pac_direccion = '" + pac_direccion + "', "
                     + "pac_numcasa = '" + pac_numcasa + "', "
-                    + "pac_colonia = '" + pac_colonia + "', "
+                    + "pac_calle = '" + pac_calle + "', "
                     + "pac_fechanac = '" + pac_fechanac + "' " 
                 + "WHERE id_paciente = '"+um_paciente+"' and pac_idunidadmedica = '"+id_unidadmedica+"'");
             System.out.println("ConsultaPreparada"+sql);

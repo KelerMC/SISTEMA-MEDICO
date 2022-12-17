@@ -57,7 +57,7 @@ public class vistaRecetas extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT dni_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_curp,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
+            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
                  
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
@@ -65,11 +65,11 @@ public class vistaRecetas extends javax.swing.JFrame {
                 pac_apellidomaterno varchar(45) 
                 pac_edad int(11) 
                 pac_sexo varchar(45) 
-                pac_curp varchar(45) 
+                pac_dni varchar(45) 
                 pac_lugar varchar(45) 
                 pac_direccion varchar(45) 
                 pac_numcasa varchar(45) 
-                pac_colonia varchar(45) 
+                pac_calle varchar(45) 
                 pac_fechanac date 
                 pac_idunidadmedica int(11)
                 //unimedica
@@ -99,13 +99,13 @@ public class vistaRecetas extends javax.swing.JFrame {
                   //resultSet.getStringpac_nombres
                   //nombreCompleto = res.getString("pac_nombres") +" "+ res.getString("pac_apellidopaterno") +" "+ res.getString("pac_apellidomaterno");
                   vr_nompac.setText(res.getString("pac_nombres") +" "+ res.getString("pac_apellidopaterno") +" "+ res.getString("pac_apellidomaterno"));
-//                  dape_curp.setText(res.getString("pac_curp"));
+//                  dape_curp.setText(res.getString("pac_dni"));
                   //public_edad = res.getString("pac_edad");
                   vr_edadpac.setText(res.getString("pac_edad"));
 //                  dape_lugar.setText(res.getString("pac_lugar"));
 //                  dape_direccion.setText(res.getString("pac_direccion"));
 //                  dape_nomcasa.setText(res.getString("pac_numcasa") );
-//                  dape_colonia.setText(res.getString("pac_colonia") );
+//                  dape_colonia.setText(res.getString("pac_calle") );
                   vr_sexo.setText(res.getString("pac_sexo"));
 //                  dape_fechanac.setText(res.getString("pac_fechanac"));
                   vr_idpaciete.setText(res.getString("id_paciente") );

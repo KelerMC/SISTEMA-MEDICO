@@ -173,13 +173,13 @@ public class contraldorReporteTabla {
                     table.addCell(cell);
                     cell = new PdfPCell(new Paragraph(String.valueOf(rs.getInt("pac_edad"))));
                     table.addCell(cell);
-                    cell = new PdfPCell(new Paragraph(rs.getString("pac_curp")));
+                    cell = new PdfPCell(new Paragraph(rs.getString("pac_dni")));
                     table.addCell(cell);
                     cell = new PdfPCell(new Paragraph(rs.getString("pac_lugar")));
                     table.addCell(cell);
                     cell = new PdfPCell(new Paragraph(rs.getString("pac_direccion")));
                     table.addCell(cell);
-                    cell = new PdfPCell(new Paragraph(rs.getString("pac_colonia")));
+                    cell = new PdfPCell(new Paragraph(rs.getString("pac_calle")));
                     table.addCell(cell);
                     cell = new PdfPCell(new Paragraph(rs.getString("pac_direccion")));
                     table.addCell(cell);

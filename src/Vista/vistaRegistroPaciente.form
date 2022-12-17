@@ -73,7 +73,7 @@
                                   <Group type="102" alignment="0" attributes="0">
                                       <Component id="pac_numcasa" min="-2" pref="100" max="-2" attributes="0"/>
                                       <EmptySpace max="32767" attributes="0"/>
-                                      <Component id="pac_colonia" min="-2" pref="100" max="-2" attributes="0"/>
+                                      <Component id="pac_calle" min="-2" pref="100" max="-2" attributes="0"/>
                                   </Group>
                                   <Group type="102" alignment="0" attributes="0">
                                       <Group type="103" groupAlignment="1" max="-2" attributes="0">
@@ -122,7 +122,7 @@
                               <Group type="103" groupAlignment="1" max="-2" attributes="0">
                                   <Component id="jLabel13" min="-2" max="-2" attributes="0"/>
                                   <Component id="pac_lugar" alignment="0" pref="200" max="32767" attributes="0"/>
-                                  <Component id="pac_curp" alignment="0" pref="200" max="32767" attributes="0"/>
+                                  <Component id="pac_dni" alignment="0" pref="200" max="32767" attributes="0"/>
                                   <Component id="pac_fecha" alignment="0" max="32767" attributes="0"/>
                               </Group>
                           </Group>
@@ -138,7 +138,7 @@
           <Group type="103" groupAlignment="0" attributes="0">
               <Group type="102" alignment="0" attributes="0">
                   <Component id="jPanel1" min="-2" max="-2" attributes="0"/>
-                  <EmptySpace pref="18" max="32767" attributes="0"/>
+                  <EmptySpace pref="24" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="0" attributes="0">
                       <Group type="102" alignment="1" attributes="0">
                           <Group type="103" groupAlignment="3" attributes="0">
@@ -178,7 +178,7 @@
                           <EmptySpace min="-2" pref="52" max="-2" attributes="0"/>
                           <Group type="103" groupAlignment="3" attributes="0">
                               <Component id="jLabel8" alignment="3" min="-2" max="-2" attributes="0"/>
-                              <Component id="pac_curp" alignment="3" min="-2" max="-2" attributes="0"/>
+                              <Component id="pac_dni" alignment="3" min="-2" max="-2" attributes="0"/>
                               <Component id="jLabel14" alignment="3" min="-2" max="-2" attributes="0"/>
                           </Group>
                       </Group>
@@ -201,7 +201,7 @@
                   <EmptySpace min="-2" pref="30" max="-2" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="pac_numcasa" alignment="3" min="-2" max="-2" attributes="0"/>
-                      <Component id="pac_colonia" alignment="3" min="-2" max="-2" attributes="0"/>
+                      <Component id="pac_calle" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel11" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="jLabel13" alignment="3" min="-2" max="-2" attributes="0"/>
                   </Group>
@@ -215,7 +215,7 @@
                       <Component id="jButton3" max="32767" attributes="0"/>
                       <Component id="btnRegistrar" pref="52" max="32767" attributes="0"/>
                   </Group>
-                  <EmptySpace pref="33" max="32767" attributes="0"/>
+                  <EmptySpace pref="38" max="32767" attributes="0"/>
                   <Group type="103" groupAlignment="3" attributes="0">
                       <Component id="jLabel15" alignment="3" min="-2" max="-2" attributes="0"/>
                       <Component id="pac_error" alignment="3" min="-2" max="-2" attributes="0"/>
@@ -302,7 +302,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="pac_colonia">
+        <Component class="javax.swing.JTextField" name="pac_calle">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="2"/>
@@ -316,7 +316,7 @@
             </Property>
           </Properties>
         </Component>
-        <Component class="javax.swing.JTextField" name="pac_curp">
+        <Component class="javax.swing.JTextField" name="pac_dni">
           <Properties>
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="2"/>
@@ -438,7 +438,7 @@
             <Property name="font" type="java.awt.Font" editor="org.netbeans.beaninfo.editors.FontEditor">
               <Font name="Tahoma" size="14" style="1"/>
             </Property>
-            <Property name="text" type="java.lang.String" value="Lugar:"/>
+            <Property name="text" type="java.lang.String" value="Ciudad:"/>
           </Properties>
         </Component>
         <Component class="javax.swing.JLabel" name="jLabel10">

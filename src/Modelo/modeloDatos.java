@@ -19,11 +19,11 @@ public class modeloDatos {
     private String pac_apellidomaternobd;
     private int pac_edadbd;
     private String pac_sexobd;
-    private String pac_curpbd;
+    private String pac_dnibd;
     private String pac_lugarbd;
     private String pac_direccionbd;
     private String pac_numcasabd;
-    private String pac_coloniabd;
+    private String pac_callebd;
     private String pac_fechanacbd;
     private int pac_idunidadmedicabd;
     /*Unidad Medica*/
@@ -90,12 +90,12 @@ public class modeloDatos {
         this.pac_sexobd = pac_sexobd;
     }
 
-    public String getPac_curpbd() {
-        return pac_curpbd;
+    public String getPac_dnibd() {
+        return pac_dnibd;
     }
 
-    public void setPac_curpbd(String pac_curpbd) {
-        this.pac_curpbd = pac_curpbd;
+    public void setPac_dnibd(String pac_dnibd) {
+        this.pac_dnibd = pac_dnibd;
     }
 
     public String getPac_lugarbd() {
@@ -122,12 +122,12 @@ public class modeloDatos {
         this.pac_numcasabd = pac_numcasabd;
     }
 
-    public String getPac_coloniabd() {
-        return pac_coloniabd;
+    public String getPac_callebd() {
+        return pac_callebd;
     }
 
-    public void setPac_coloniabd(String pac_coloniabd) {
-        this.pac_coloniabd = pac_coloniabd;
+    public void setPac_callebd(String pac_callebd) {
+        this.pac_callebd = pac_callebd;
     }
 
     public String getPac_fechanacbd() {

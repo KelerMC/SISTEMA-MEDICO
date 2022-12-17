@@ -77,9 +77,9 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
         pac_edad = new javax.swing.JTextField();
         pac_paterno = new javax.swing.JTextField();
         pac_numcasa = new javax.swing.JTextField();
-        pac_colonia = new javax.swing.JTextField();
+        pac_calle = new javax.swing.JTextField();
         pac_direccion = new javax.swing.JTextField();
-        pac_curp = new javax.swing.JTextField();
+        pac_dni = new javax.swing.JTextField();
         pac_sexo = new javax.swing.JComboBox<String>();
         pac_lugar = new javax.swing.JTextField();
         jButton1 = new javax.swing.JButton();
@@ -146,11 +146,11 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
 
         pac_numcasa.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
 
-        pac_colonia.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
+        pac_calle.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
 
         pac_direccion.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
 
-        pac_curp.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
+        pac_dni.setFont(new java.awt.Font("Tahoma", 2, 14)); // NOI18N
 
         pac_sexo.setFont(new java.awt.Font("Tahoma", 2, 12)); // NOI18N
         pac_sexo.setForeground(new java.awt.Color(51, 51, 51));
@@ -202,7 +202,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
         jLabel8.setText("DNI:");
 
         jLabel9.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
-        jLabel9.setText("Lugar:");
+        jLabel9.setText("Ciudad:");
 
         jLabel10.setFont(new java.awt.Font("Tahoma", 1, 14)); // NOI18N
         jLabel10.setText("Dirección:");
@@ -271,7 +271,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                     .addComponent(pac_numcasa, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE)
                                     .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
-                                    .addComponent(pac_colonia, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
+                                    .addComponent(pac_calle, javax.swing.GroupLayout.PREFERRED_SIZE, 100, javax.swing.GroupLayout.PREFERRED_SIZE))
                                 .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
                                     .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                         .addGroup(javax.swing.GroupLayout.Alignment.LEADING, jPanel2Layout.createSequentialGroup()
@@ -307,7 +307,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
                             .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.TRAILING, false)
                                 .addComponent(jLabel13)
                                 .addComponent(pac_lugar, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
-                                .addComponent(pac_curp, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
+                                .addComponent(pac_dni, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, 200, Short.MAX_VALUE)
                                 .addComponent(pac_fecha, javax.swing.GroupLayout.Alignment.LEADING, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)))
                         .addGap(132, 132, 132)
                         .addComponent(jButton3, javax.swing.GroupLayout.PREFERRED_SIZE, 193, javax.swing.GroupLayout.PREFERRED_SIZE)
@@ -317,7 +317,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
             jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
             .addGroup(jPanel2Layout.createSequentialGroup()
                 .addComponent(jPanel1, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 18, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 24, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING)
                     .addGroup(javax.swing.GroupLayout.Alignment.TRAILING, jPanel2Layout.createSequentialGroup()
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
@@ -349,7 +349,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
                         .addGap(52, 52, 52)
                         .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                             .addComponent(jLabel8)
-                            .addComponent(pac_curp, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                            .addComponent(pac_dni, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                             .addComponent(jLabel14)))
                     .addGroup(jPanel2Layout.createSequentialGroup()
                         .addComponent(jLabel1)
@@ -366,7 +366,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
                 .addGap(30, 30, 30)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(pac_numcasa, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
-                    .addComponent(pac_colonia, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
+                    .addComponent(pac_calle, javax.swing.GroupLayout.PREFERRED_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.PREFERRED_SIZE)
                     .addComponent(jLabel11)
                     .addComponent(jLabel13))
                 .addGap(18, 18, 18)
@@ -377,7 +377,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.LEADING, false)
                     .addComponent(jButton3, javax.swing.GroupLayout.DEFAULT_SIZE, javax.swing.GroupLayout.DEFAULT_SIZE, Short.MAX_VALUE)
                     .addComponent(btnRegistrar, javax.swing.GroupLayout.DEFAULT_SIZE, 52, Short.MAX_VALUE))
-                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 33, Short.MAX_VALUE)
+                .addPreferredGap(javax.swing.LayoutStyle.ComponentPlacement.RELATED, 38, Short.MAX_VALUE)
                 .addGroup(jPanel2Layout.createParallelGroup(javax.swing.GroupLayout.Alignment.BASELINE)
                     .addComponent(jLabel15)
                     .addComponent(pac_error))
@@ -416,11 +416,11 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
              AuxCase =  pac_edad.getText();
              cd.setPac_edadbd(Integer.parseInt(AuxCase));
              cd.setPac_sexobd((String) pac_sexo.getSelectedItem());
-             cd.setPac_curpbd(pac_curp.getText());
+             cd.setPac_dnibd(pac_dni.getText());
              cd.setPac_lugarbd(pac_lugar.getText());
              cd.setPac_direccionbd(pac_direccion.getText());
              cd.setPac_numcasabd(pac_numcasa.getText());
-             cd.setPac_coloniabd(pac_colonia.getText());
+             cd.setPac_callebd(pac_calle.getText());
              cd.setPac_fechanacbd(pac_fecha.getDateFormatString());
              cd.setPac_idunidadmedicabd(cd.getId_unidadmedica());
             AuxCase = "";
@@ -428,7 +428,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
             int random2 = Integer.parseInt(idUnidadMedica.getText());
             int edad = Integer.parseInt(pac_edad.getText());
             String sexo = (String) pac_sexo.getSelectedItem();
-            validaBD = cb.updateDataUsuarioPAC("tabla_pacientes", random, pac_nombres.getText(), pac_paterno.getText(), pac_materno.getText(), edad, sexo, pac_curp.getText(),pac_lugar.getText(), pac_direccion.getText(), pac_numcasa.getText(), pac_colonia.getText(),fechaFormateada, random2);
+            validaBD = cb.updateDataUsuarioPAC("tabla_pacientes", random, pac_nombres.getText(), pac_paterno.getText(), pac_materno.getText(), edad, sexo, pac_dni.getText(),pac_lugar.getText(), pac_direccion.getText(), pac_numcasa.getText(), pac_calle.getText(),fechaFormateada, random2);
             if(validaBD == 1){
                 System.out.println("Proceso de guardado de Usuario de PAC fue correcto");
             }
@@ -527,9 +527,9 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
     private javax.swing.JLabel jLabel9;
     private javax.swing.JPanel jPanel1;
     private javax.swing.JPanel jPanel2;
-    private javax.swing.JTextField pac_colonia;
-    private javax.swing.JTextField pac_curp;
+    private javax.swing.JTextField pac_calle;
     private javax.swing.JTextField pac_direccion;
+    private javax.swing.JTextField pac_dni;
     private javax.swing.JTextField pac_edad;
     private javax.swing.JLabel pac_error;
     private com.toedter.calendar.JDateChooser pac_fecha;
