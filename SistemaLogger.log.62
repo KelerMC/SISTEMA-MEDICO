@@ -1,0 +1,20 @@
+dic 12, 2022 7:10:44 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se Ejecuta la consulta: select * from tabla_usuarios where username='admin' and password='admin' 
+dic 12, 2022 7:10:44 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia el sistema control médico
+dic 12, 2022 7:10:44 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia ValidarAcceso()
+dic 12, 2022 7:12:01 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia ingresa: usuarioadmin
+dic 12, 2022 7:12:01 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se Ejecuta la consulta: select * from tabla_usuarios where username='admin' and password='admin' 
+dic 12, 2022 7:12:01 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia el sistema control médico
+dic 12, 2022 7:12:01 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia ValidarAcceso()
+dic 12, 2022 7:23:16 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia la vistaRegistroPaciente()
+dic 12, 2022 7:23:17 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se cierra la vistaRegistroPaciente()
+dic 12, 2022 7:24:05 PM Controlador.ControlLoogs escribirLog
+INFORMACIÓN: Usuario: Actividad: Se inicia conex()
