@@ -234,6 +234,7 @@ public class vistaRecetas extends javax.swing.JFrame {
                         .addContainerGap())))
         );
 
+        rv_descripcion.setEditable(false);
         rv_descripcion.setColumns(20);
         rv_descripcion.setFont(new java.awt.Font("Constantia", 2, 14)); // NOI18N
         rv_descripcion.setRows(5);
