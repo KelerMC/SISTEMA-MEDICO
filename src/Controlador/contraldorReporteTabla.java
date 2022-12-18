@@ -94,7 +94,7 @@ public class contraldorReporteTabla {
       }
       clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se nombra y obtiene consulta para el reporte"); 
       Document document = new Document();
-      document.setPageSize(PageSize.A3.rotate());
+      document.setPageSize(PageSize.A4.rotate());
       document.setMargins(15, 15, 15, 15);
 //      PdfWriter writer = new PdfWriter(dest);       
          
@@ -129,14 +129,13 @@ public class contraldorReporteTabla {
       
       String rotulosColumnas[] = rotulosColumna(TipoArchivo);
       
-      for(int i=0; i<rotulosColumnas.length; i++)
-      {
-                    cell = new PdfPCell(new Paragraph(rotulosColumnas[i]));
-                    cell.setVerticalAlignment(Element.ALIGN_CENTER);
-                    cell.setHorizontalAlignment(Element.ALIGN_CENTER);
-                    cell.setBackgroundColor (BaseColor.WHITE);
-                    table.addCell(cell);
-      }
+        for (String rotulosColumna : rotulosColumnas) {
+            cell = new PdfPCell(new Paragraph(rotulosColumna));
+            cell.setVerticalAlignment(Element.ALIGN_CENTER);
+            cell.setHorizontalAlignment(Element.ALIGN_CENTER);
+            cell.setBackgroundColor (BaseColor.WHITE);
+            table.addCell(cell);
+        }
       
       try { 
           
@@ -296,7 +295,7 @@ public class contraldorReporteTabla {
       b.close();
       // Closing the document       
       document.close();
-      clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se Crea el Reporte con éxito"); 
+      ControlLoogs.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se Crea el Reporte con éxito"); 
       System.out.println("Table created successfully..");
       
    }
@@ -305,12 +304,12 @@ public class contraldorReporteTabla {
    public String[] rotulosColumna(int tipoArchivo){
        /*Tabla Unidad Medica*/
        String [] rotulosColumna = null;
-       String [] rotulosColumnaTipo1 = {"IDUnidadMedica","IDPaciente","Folio","Medico","Consultorio"};
+       String [] rotulosColumnaTipo1 = {"IDUnidadMédica","IDPaciente","Folio","Médico","Consultorio"};
        /*Tabla Pacientes*/
        String [] rotulosColumnaTipo2 = 
        {"Paciente","Nombre(s)","ApellidoPaterno",
            "ApellidoMaterno","Edad","Sexo","DNI",
-           "LUGAR","DIRECCION","CALLE","CIUDAD","FechaNacimiento","IDUnidadMedica"};
+           "LUGAR","DIRECCIÓN","CALLE","CIUDAD","FechaNacimiento","IDUnidadMedica"};
        /*Tabla Recetas*/
        String [] rotulosColumnaTipo3 = 
        {"id","idPaciente","idUnidadMedica","Descripcion",
@@ -322,7 +321,7 @@ public class contraldorReporteTabla {
        /*Tabla Citas*/
        String [] rotulosColumnaTipo5 = 
        {"IDCita","IDPaciente","IDFecha",
-           "Fecha","Servicio","Analisis","IDUnidadMedica",
+           "Fecha","Servicio","Análisis","IDUnidadMédica",
            "IDRecetas"};
        String [] rotulosColumnaTipo6 = 
        {"Logs:"};
