@@ -308,7 +308,7 @@ public class contraldorReporteTabla {
        String [] rotulosColumnaTipo2 = 
        {"Paciente","Nombre(s)","ApellidoPaterno",
            "ApellidoMaterno","Edad","Sexo","DNI",
-           "LUGAR","DIRECCION","NUMEROCASA","COLONIA","FechaNacimiento","IDUnidadMedica"};
+           "LUGAR","DIRECCION","NUMEROCASA","CIUDAD","FechaNacimiento","IDUnidadMedica"};
        /*Tabla Recetas*/
        String [] rotulosColumnaTipo3 = 
        {"id","idPaciente","idUnidadMedica","Descripcion",
