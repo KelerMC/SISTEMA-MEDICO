@@ -81,7 +81,7 @@ public class vistaCitas extends javax.swing.JFrame {
     }
     
     public String returnDatosUCitas(String idPaciente){
-        String newSql = "SELECT * FROM bdconsultorio.tabla_pacientes, bdconsultorio.tabla_unidadmedica";
+        String newSql = "SELECT * FROM bdconsultorio1.tabla_pacientes, bdconsultorio1.tabla_unidadmedica";
         newSql += " WHERE id_paciente = '"+idPaciente+"' and um_paciente = '"+idPaciente+"'";
         return newSql;
     }
@@ -101,7 +101,7 @@ public class vistaCitas extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT dni_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-                "SELECT cm_idcita,cm_idpaciente,cm_idunidadmedica,cm_idfecha,cm_fechahora,cm_servicio,cm_analisispac,cm_idrecetas FROM bdconsultorio.tabla_citas where cm_idpaciente = '"+busquedaFiltroSF+"'";// or id_paciente = '"+busquedaFiltroSF+"'";    
+                "SELECT cm_idcita,cm_idpaciente,cm_idunidadmedica,cm_idfecha,cm_fechahora,cm_servicio,cm_analisispac,cm_idrecetas FROM bdconsultorio1.tabla_citas where cm_idpaciente = '"+busquedaFiltroSF+"'";// or id_paciente = '"+busquedaFiltroSF+"'";    
              System.out.println("Contenido: "+Sql);
              clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se obtiene "+Sql);
             
