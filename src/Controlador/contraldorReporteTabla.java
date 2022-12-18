@@ -116,7 +116,7 @@ public class contraldorReporteTabla {
       //N+umero de columnas :p
       float [] pointColumnWidths = tamColumnas(TipoArchivo);
       PdfPTable table = new PdfPTable(pointColumnWidths);
-      table.setWidthPercentage(100);
+      table.setWidthPercentage(110);
       table.setHorizontalAlignment(Element.ALIGN_CENTER);
       PdfPCell cell = new PdfPCell(new Paragraph("Tabla:"+nombreReporte));
       cell.setColspan(pointColumnWidths.length);
