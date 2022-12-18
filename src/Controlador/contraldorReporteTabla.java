@@ -5,9 +5,6 @@
  */
 package Controlador;
 import Vista.vistaPrincipal;
-import java.io.FileOutputStream;
-import java.util.Date;
-
 import com.itextpdf.text.Anchor;
 import com.itextpdf.text.BadElementException;
 import com.itextpdf.text.BaseColor;
@@ -18,6 +15,7 @@ import com.itextpdf.text.Element;
 import com.itextpdf.text.Font;
 import com.itextpdf.text.List;
 import com.itextpdf.text.ListItem;
+import com.itextpdf.text.PageSize;
 import com.itextpdf.text.Paragraph;
 import com.itextpdf.text.Phrase;
 import com.itextpdf.text.Section;
@@ -26,12 +24,14 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 import java.awt.Color;
 import java.io.BufferedReader;
+import java.io.FileOutputStream;
 import java.io.FileReader;
 import java.io.RandomAccessFile;
 import java.sql.Connection;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 import java.sql.Statement;
+import java.util.Date;
 /**
  *
  * @author joseluis.caamal
@@ -94,6 +94,8 @@ public class contraldorReporteTabla {
       }
       clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se nombra y obtiene consulta para el reporte"); 
       Document document = new Document();
+      document.setPageSize(PageSize.A3.rotate());
+      document.setMargins(15, 15, 15, 15);
 //      PdfWriter writer = new PdfWriter(dest);       
          
       // Creating a PdfDocument object      
@@ -116,7 +118,7 @@ public class contraldorReporteTabla {
       //N+umero de columnas :p
       float [] pointColumnWidths = tamColumnas(TipoArchivo);
       PdfPTable table = new PdfPTable(pointColumnWidths);
-      table.setWidthPercentage(110);
+      table.setWidthPercentage(100);
       table.setHorizontalAlignment(Element.ALIGN_CENTER);
       PdfPCell cell = new PdfPCell(new Paragraph("Tabla:"+nombreReporte));
       cell.setColspan(pointColumnWidths.length);
