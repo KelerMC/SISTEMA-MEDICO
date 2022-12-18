@@ -307,7 +307,7 @@ public class contraldorReporteTabla {
        String [] rotulosColumnaTipo1 = {"IDUnidadMédica","IDPaciente","Folio","Médico","Consultorio"};
        /*Tabla Pacientes*/
        String [] rotulosColumnaTipo2 = 
-       {"Paciente","Nombre(s)","ApellidoPaterno",
+       {"IDPaciente","Nombre(s)","ApellidoPaterno",
            "ApellidoMaterno","Edad","Sexo","DNI",
            "LUGAR","DIRECCIÓN","CALLE","CIUDAD","FechaNacimiento","IDUnidadMedica"};
        /*Tabla Recetas*/
@@ -360,7 +360,7 @@ public class contraldorReporteTabla {
        float [] pointColumnWidths = null;
        float [] rotulosColumnaTipo1 = {3f,3f,3f,3f,3f};
        /*Tabla Pacientes*/
-       float [] rotulosColumnaTipo2 = {3f,3f,3f,3f,3f,3f,3f,3f,3f,3f,3f,3f,3f};
+       float [] rotulosColumnaTipo2 = {3.5f,3.1f,2.8f,2.8f,3f,3f,3f,3f,4f,3f,3f,2.8f,3f};
        /*Tabla Recetas*/
        float [] rotulosColumnaTipo3 = {3f,3f,3f,5f,3f,3f,3f,3f,3f,3f};
        /*Tabla Usuarios*/
