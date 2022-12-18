@@ -38,7 +38,7 @@ public class vistaRecetas extends javax.swing.JFrame {
     public String returnPac(String idPaciente, String id_receta, String rec_idcita){
         String newSql = "";
         if(!"".equals(idPaciente) || !"".equals(id_receta) || !"".equals(rec_idcita)){
-            newSql = "SELECT * FROM bdconsultorio.tabla_recetas, bdconsultorio.tabla_pacientes, bdconsultorio.tabla_citas";
+            newSql = "SELECT * FROM bdconsultorio1.tabla_recetas, bdconsultorio1.tabla_pacientes, bdconsultorio1.tabla_citas";
             newSql += " WHERE id_paciente = '"+idPaciente+"' and rec_idreceta = '"+id_receta+"' and rec_idcita = '"+rec_idcita+"'";
         }
         else{

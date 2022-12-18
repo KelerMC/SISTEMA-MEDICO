@@ -32,7 +32,7 @@ public class vistaControlDatos extends javax.swing.JFrame {
     controladorBD cb = new controladorBD();
     public vistaControlDatos(String idPaciente, int verDatos) {
         //String Sql = "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
-        Sql = "SELECT * FROM bdconsultorio.tabla_pacientes, bdconsultorio.tabla_unidadmedica";
+        Sql = "SELECT * FROM bdconsultorio.tabla_pacientes, bdconsultorio1.tabla_unidadmedica";
         Sql += " WHERE id_paciente = '"+idPaciente+"' and um_paciente = '"+idPaciente+"'";
         initComponents();
         if(verDatos == 1){

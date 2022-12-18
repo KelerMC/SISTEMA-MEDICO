@@ -31,7 +31,7 @@ import com.itextpdf.text.pdf.PdfPTable;
 import com.itextpdf.text.pdf.PdfWriter;
 
 public class ControlReports {
-	private static String FILE = ".\\reportes\\PrimerPDF.pdf";
+	private static String FILE = "src\\Reportes\\PrimerPDF.pdf";
 	private static Font catFont = new Font(Font.FontFamily.TIMES_ROMAN, 18,
 			Font.BOLD);
 	private static Font redFont = new Font(Font.FontFamily.TIMES_ROMAN, 12,

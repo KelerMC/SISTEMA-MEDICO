@@ -408,7 +408,7 @@ public class vistaRegistroPaciente extends javax.swing.JFrame {
         fechaFormatoTiempo = formatoTiempo.format(pac_fecha.getDate());
         System.out.println("FechaIngresada"+fechaFormateada);
         if(idUMedica > 0){
-             cb.MySQLConnection("root", "root", "bdconsultorio"); /*Abrimos conexión*/
+             cb.MySQLConnection("root", "root", "bdconsultorio1"); /*Abrimos conexión*/
              cd.setId_pacientebd(idUMedica); /*Creamos un número aleatorio para el id del paciente*/
              cd.setPac_nombresbd(pac_nombres.getText()); //pac_nombresbd = pac_nombres.getText();
              cd.setPac_apellidopaternobd(pac_paterno.getText());//pac_apellidopaternobd = pac_materno.getText();

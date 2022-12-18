@@ -41,11 +41,11 @@ public class controladorBD {
     public Connection conex() {
         
         try {
-            String db_nam = "bdconsultorio";
+            String db_nam = "bdconsultorio1";
             String use = "root";
             String pas ="root";
             Class.forName("com.mysql.cj.jdbc.Driver");
-            Conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdconsultorio", use, pas);
+            Conexion = DriverManager.getConnection("jdbc:mysql://localhost:3306/bdconsultorio1", use, pas);
             System.out.println("Se ha iniciado la conexión con el servidor de forma exitosa");
         } catch (ClassNotFoundException | SQLException ex) {
             //Logger.getLogger(LibreriaHerramientas.class.getName()).log(Level.SEVERE, null, ex);
@@ -64,7 +64,7 @@ public class controladorBD {
     public boolean conexion(){
         clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se inicia conexion()");
         try {
-            String db_nam = "bdconsultorio";
+            String db_nam = "bdconsultorio1";
             String use = "root";
             String pas ="root";
             Class.forName("com.mysql.jdbc.Driver");
@@ -447,7 +447,7 @@ public Object[] selectLlenaTabla(){
      Object llenaTabla[] = null;
     clog.escribirLog("SistemaLogger.log", "Usuario: Actividad: Se inicia selectLlenaTabla()");
     try {
-            String Query = "SELECT * FROM bdconsultorio.tabla_pacientes;";
+            String Query = "SELECT * FROM bdconsultorio1.tabla_pacientes;";
             Statement st = Conexion.createStatement();
             java.sql.ResultSet resultSet;
             resultSet = st.executeQuery(Query);

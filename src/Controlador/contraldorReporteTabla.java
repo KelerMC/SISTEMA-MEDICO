@@ -61,32 +61,32 @@ public class contraldorReporteTabla {
       /*Defenimos el nombre del archivo y el destino:*/
       switch(TipoArchivo){
           case 1:
-              dest = ".\\reportes\\ReporteUnidadMedica"+fechaFinal+".pdf";
+              dest = "src\\Reportes\\ReporteUnidadMedica"+fechaFinal+".pdf";
               nombreReporte = "Reporte Unidad Medica";
                sql= "select * from tabla_unidadmedica";
           break;
           case 2:
-              dest = ".\\reportes\\ReportePacientes"+fechaFinal+".pdf"; 
+              dest = "src\\Reportes\\ReportePacientes"+fechaFinal+".pdf"; 
               nombreReporte = "Reporte Pacientes";
                sql= "select * from tabla_pacientes";
           break;
           case 3:
-              dest = ".\\reportes\\ReporteRecetas"+fechaFinal+".pdf"; 
+              dest = "src\\Reportes\\ReporteRecetas"+fechaFinal+".pdf"; 
               nombreReporte = "Reporte Recetas";
                sql= "select * from tabla_recetas";
           break;
           case 4:
-              dest = ".\\reportes\\ReporteUsuarios"+fechaFinal+".pdf"; 
+              dest = "src\\Reportes\\ReporteUsuarios"+fechaFinal+".pdf"; 
               nombreReporte = "Reporte Usuarios";
                sql= "select * from tabla_usuarios";
           break;
           case 5:
-              dest = ".\\reportes\\ReporteCitas"+fechaFinal+".pdf";
+              dest = "src\\Reportes\\ReporteCitas"+fechaFinal+".pdf";
               nombreReporte = "Reporte Citas";
                sql= "select * from tabla_citas";
           break;
           case 6:
-              dest = ".\\reportes\\ReporteLogs"+fechaFinal+".pdf";
+              dest = "src\\Reportes\\ReporteLogs"+fechaFinal+".pdf";
               nombreReporte = "Reporte Logs";
               //sql= "select * from tabla_citas";
           break;

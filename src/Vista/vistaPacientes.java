@@ -72,7 +72,7 @@ public class vistaPacientes extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT ci_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes";
+            "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio1.tabla_pacientes";
                  /*
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
@@ -119,7 +119,7 @@ public class vistaPacientes extends javax.swing.JFrame {
             
                  Sql = 
                  //   "SELECT ci_pago,usuario,fecha_pago,total,saldoActual FROM tabla_pagos";
-                "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio.tabla_pacientes where pac_nombres = '"+busquedaFiltroSF+"' or id_paciente = '"+busquedaFiltroSF+"'";
+                "SELECT id_paciente,pac_nombres,pac_apellidopaterno,pac_apellidomaterno,pac_dni,pac_idunidadmedica FROM bdconsultorio1.tabla_pacientes where pac_nombres = '"+busquedaFiltroSF+"' or id_paciente = '"+busquedaFiltroSF+"'";
                  /*
                  id_paciente int(11) PK 
                 pac_nombres varchar(45) 
